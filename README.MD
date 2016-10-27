@@ -3,7 +3,7 @@
 
 2. Follow the roadmap! This is the roadmap we set, and I'll update it as we go along. There's lots to do right now, especially polishing up the graphics.
 
-
+### Roadmap
 1. (done) Create arbitrary gameplay sprites
 2. (done) Write code for connecting stars
 3. Create real gameplay sprites
@@ -17,10 +17,10 @@
 	* Starry background for each level
 	* Menu background
 4. Create star arrays and hints, adding misleading stars
-	* Based off of starry backgrounds, highlight some stars by making them bigger.
-	* Add some level-specific hints for our figureheads to say
+	* Based off of starry backgrounds, highlight some stars 	by making them bigger.
+	* Add some level-specific hints for our figureheads to 	say
 5. Write code for giving hints
-	* Make figureheads appear and talk if player does not get a correct line in X number of seconds
+	* Make figureheads appear and talk if player does not 	get a correct line in X number of seconds
 6. Write code for level selection and progression
 	* Add a menu for easy level selection.
 7. Alpha test gameplay as a group
