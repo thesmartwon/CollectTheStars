@@ -106,7 +106,7 @@ if (spr_custom != noone)
     surface_set_target(surf);
     draw_clear_alpha(c_black, 0);
     draw_set_colour(c_blue);
-    draw_rectangle(0,0,width-1,height-1,true);
+    //draw_rectangle(0,0,width-1,height-1,true);
     draw_line_width_color(starting_point[point_x] - x, starting_point[point_y] - y, ending_point[point_x] - x, ending_point[point_y] - y, 5, c_black, c_black);
     spr_custom = sprite_create_from_surface(surf, 0, 0, width, height, false, true, 0, 0);
     surface_reset_target();
