@@ -12,9 +12,19 @@
   <backgrounds name="background"/>
   <paths name="paths"/>
   <scripts name="scripts">
-    <script>scripts\point_create.gml</script>
+    <script>scripts\add_connection.gml</script>
+    <script>scripts\array_contains.gml</script>
+    <script>scripts\contains_only_solution_connections.gml</script>
+    <script>scripts\ds_list_contains.gml</script>
+    <script>scripts\get_connection_star_nums.gml</script>
+    <script>scripts\get_connections_with.gml</script>
+    <script>scripts\get_solution_hints.gml</script>
+    <script>scripts\get_solutions.gml</script>
     <script>scripts\is_valid_solution.gml</script>
-    <script>scripts\get_solution_pairings.gml</script>
+    <script>scripts\make_connection_string.gml</script>
+    <script>scripts\point_create.gml</script>
+    <script>scripts\remove_connection.gml</script>
+    <script>scripts\update_star_con_status.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\obj_star</object>

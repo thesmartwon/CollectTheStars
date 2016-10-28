@@ -25,9 +25,56 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>is_connected = false;
-is_selected = false;
-connection_num = -1;
+            <string>is_selected = false;
+star_num = -1;
+rotation_degrees = 0;
+has_only_correct_connections = false;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="1" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>ds_list_destroy(connections);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>rotation_degrees += 0.5;
 </string>
           </argument>
         </arguments>
@@ -51,29 +98,27 @@ connection_num = -1;
           <argument>
             <kind>1</kind>
             <string>// Ending/cancelling line
-var connection = string(min(global.star_selected.connection_num,connection_num)) + "-" +
-                 string(max(global.star_selected.connection_num,connection_num));
+var connection = make_connection_string(star_num,global.star_selected.star_num);
 if (global.star_selected != id &amp;&amp; ds_list_find_index(global.star_connections,connection) == -1)
 {
-    show_debug_message("dropped on " + string(connection_num) + " at (" + string(x) + "," + string(y) + ")")
-    show_debug_message("connected " + string(global.star_selected.connection_num) + " and " + string(connection_num));
-    
-    // Record the connection
-    ds_list_add(global.star_connections,connection);
+    show_debug_message("dropped on " + string(star_num) + " at (" + string(x) + "," + string(y) + ")")
+    show_debug_message("connected " + string(global.star_selected.star_num) + " and " + string(star_num));
+
+    // Update the connection status of the other star and us
+    add_connection(id,global.star_selected,connection);
                 
     is_selected = false;
-    is_connected = true;
     global.star_selected = noone;
     
     var line = global.line_editing;
-    line.ending_point[point_x] = x + .5 * sprite_get_width(spr_star);
-    line.ending_point[point_y] = y + .5 * sprite_get_height(spr_star);
+    line.ending_point[point_x] = x;
+    line.ending_point[point_y] = y;
     line.connection = connection;
     global.line_editing = noone;
     
     if (is_valid_solution(global.star_connections,room))
     {
-        show_debug_message("yay");
+        show_debug_message("level completed");
     }
 }
 </string>
@@ -101,15 +146,54 @@ if (global.star_selected != id &amp;&amp; ds_list_find_index(global.star_connect
             <string>// Starting line
 if (global.star_selected == noone)
 {
-    show_debug_message("selected " + string(connection_num) + " at (" + string(x) + "," + string(y) + ")");
+    show_debug_message("selected " + string(star_num) + " at (" + string(x) + "," + string(y) + ")");
     is_selected = true;
     global.star_selected = id;
     
     var new_line = instance_create(mouse_x, mouse_y, obj_line);
     global.line_editing = new_line;
-    new_line.starting_point[point_x] = x + .5 * sprite_get_width(spr_star);
-    new_line.starting_point[point_y] = y + .5 * sprite_get_height(spr_star);
+    new_line.starting_point[point_x] = x;
+    new_line.starting_point[point_y] = y;
 }
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>var col = c_black;
+var alpha = 255;
+if (has_only_correct_connections)
+{
+    col = c_purple;
+    alpha = 255;
+}
+else
+{
+    col = c_black;
+    alpha = 190;
+    rotation_degrees = 0;
+}
+
+draw_sprite_ext(sprite_index,0,x,y,1,1,rotation_degrees,c_white,alpha);
+draw_set_colour(c_black);
+draw_text(x-5,y-5,string(star_num));
 </string>
           </argument>
         </arguments>

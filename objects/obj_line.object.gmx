@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>starting_point = point_create(-1,-1);
 ending_point = point_create(-1,-1);
-connection = point_create(-1,-1);
+connection = noone;
 spr_custom = noone;
 </string>
           </argument>
@@ -51,7 +51,7 @@ spr_custom = noone;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>ds_list_delete(global.star_connections,ds_list_find_index(global.star_connections,connection));
+            <string>remove_connection(connection);
 if (spr_custom != noone)
     sprite_delete(spr_custom);
 </string>
@@ -100,7 +100,7 @@ if (spr_custom != noone)
     y = min(starting_point[point_y],ending_point[point_y]) - pad_top_bot;
     var width = abs(starting_point[point_x] - ending_point[point_x]) + 2 * pad_left_right;
     var height = abs(starting_point[point_y] - ending_point[point_y]) + 2 * pad_top_bot;
-    show_debug_message("creating custom sprite at (" + string(x) + "," + string(y) + ") w:" + string(width) + " h:" + string(height))
+    //show_debug_message("creating custom sprite at (" + string(x) + "," + string(y) + ") w:" + string(width) + " h:" + string(height))
     var surf;
     surf = surface_create(width, height);
     surface_set_target(surf);

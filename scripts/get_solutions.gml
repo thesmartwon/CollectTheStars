@@ -1,4 +1,4 @@
-/// get_solution_pairings(level)
+/// get_solutions(level)
 if (argument0 == 1)
 {
     var solution; solution[2] = 0; //allocate an array
