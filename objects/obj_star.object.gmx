@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>is_selected = false;
 star_num = -1;
-rotation_degrees = 0;
+//rotation_degrees = 0;
 has_only_correct_connections = false;
 </string>
           </argument>
@@ -74,7 +74,8 @@ has_only_correct_connections = false;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>rotation_degrees += 0.5;
+            <string>//rotation_degrees += 0.5;
+
 </string>
           </argument>
         </arguments>
@@ -183,15 +184,17 @@ if (has_only_correct_connections)
 {
     col = c_purple;
     alpha = 255;
+    draw_sprite_ext(sprite_index,1,x,y,1,1,false,c_white,alpha);
 }
 else
 {
     col = c_black;
     alpha = 190;
-    rotation_degrees = 0;
+    //rotation_degrees = 0;
+    draw_sprite_ext(sprite_index,0,x,y,1,1,false,c_white,alpha);
 }
 
-draw_sprite_ext(sprite_index,0,x,y,1,1,rotation_degrees,c_white,alpha);
+//draw_sprite_ext(sprite_index,0,x,y,1,1,false,c_white,alpha);
 draw_set_colour(c_black);
 draw_text(x-5,y-5,string(star_num));
 </string>

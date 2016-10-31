@@ -9,7 +9,10 @@
     <sprite>sprites\spr_star</sprite>
     <sprite>sprites\spr_test</sprite>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\bg_night</background>
+    <background>background\bg_init</background>
+  </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\add_connection.gml</script>
@@ -33,7 +36,10 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_init</room>
-    <room>rooms\rm_lvl01</room>
+    <room>rooms\rm_lvl01_night</room>
+    <room>rooms\rm_lv02_night</room>
+    <room>rooms\rm_lv03_night</room>
+    <room>rooms\rm_lv04_night</room>
   </rooms>
   <constants number="2">
     <constant name="point_x">0</constant>
