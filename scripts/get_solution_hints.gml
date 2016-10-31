@@ -1,5 +1,6 @@
 /// get_solution_hints(level)
-if (argument0 == 1)
+var level = argument0;
+if (level == 1)
 {
     var solution; solution[2] = 0; //allocate an array
     solution[0] = "Try 1 2 3 4 5";

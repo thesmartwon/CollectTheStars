@@ -8,6 +8,7 @@
   <sprites name="sprites">
     <sprite>sprites\spr_star</sprite>
     <sprite>sprites\spr_test</sprite>
+    <sprite>sprites\spr_play</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_night</background>
@@ -33,9 +34,10 @@
     <object>objects\obj_star</object>
     <object>objects\obj_line</object>
     <object>objects\obj_controller</object>
+    <object>objects\obj_btn_play</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rm_init</room>
+    <room>rooms\rm_menu</room>
     <room>rooms\rm_lvl01_night</room>
     <room>rooms\rm_lv02_night</room>
     <room>rooms\rm_lv03_night</room>

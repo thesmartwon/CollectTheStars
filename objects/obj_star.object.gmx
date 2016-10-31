@@ -120,6 +120,11 @@ if (global.star_selected != id &amp;&amp; ds_list_find_index(global.star_connect
     if (is_valid_solution(global.star_connections,room))
     {
         show_debug_message("level completed");
+        ds_list_clear(global.star_connections);
+        if (room != room_last)
+            room_goto_next();
+        else
+            room_goto(rm_menu);
     }
 }
 </string>
@@ -178,23 +183,24 @@ if (global.star_selected == noone)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>var col = c_black;
-var alpha = 255;
+            <string>col = c_black;
+alpha = 255;
+subimage = 0;
 if (has_only_correct_connections)
 {
     col = c_purple;
     alpha = 255;
-    draw_sprite_ext(sprite_index,1,x,y,1,1,false,c_white,alpha);
+    subimage = 1;
 }
 else
 {
     col = c_black;
     alpha = 190;
     //rotation_degrees = 0;
-    draw_sprite_ext(sprite_index,0,x,y,1,1,false,c_white,alpha);
+    subimage = 0;
 }
 
-//draw_sprite_ext(sprite_index,0,x,y,1,1,false,c_white,alpha);
+draw_sprite_ext(sprite_index,subimage,x,y,1,1,false,c_white,alpha);
 draw_set_colour(c_black);
 draw_text(x-5,y-5,string(star_num));
 </string>
