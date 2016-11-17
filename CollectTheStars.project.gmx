@@ -38,10 +38,16 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_menu</room>
-    <room>rooms\rm_lvl01_night</room>
-    <room>rooms\rm_lv02_night</room>
-    <room>rooms\rm_lv03_night</room>
-    <room>rooms\rm_lv04_night</room>
+    <room>rooms\rm_lvl01_orion</room>
+    <room>rooms\rm_lvl02_ursaMajor</room>
+    <room>rooms\rm_lvl03_ursaMinor</room>
+    <room>rooms\rm_lvl04_canisMajor</room>
+    <room>rooms\rm_lvl05_canisMinor</room>
+    <room>rooms\rm_lvl06_cassiopeia</room>
+    <room>rooms\rm_lvl07_cygnus</room>
+    <room>rooms\rm_lvl08_aquila</room>
+    <room>rooms\rm_lvl09_pegasus</room>
+    <room>rooms\rm_lvl10_andromeda</room>
   </rooms>
   <constants number="2">
     <constant name="point_x">0</constant>

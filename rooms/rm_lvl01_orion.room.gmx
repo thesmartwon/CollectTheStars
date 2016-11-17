@@ -51,10 +51,26 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="obj_star" x="192" y="288" name="inst_1199610A" locked="0" code="star_num = 1;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_star" x="256" y="512" name="inst_3A476A29" locked="0" code="star_num = 2;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_star" x="576" y="416" name="inst_97D4974E" locked="0" code="star_num = 3;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_star" x="736" y="192" name="inst_894727D7" locked="0" code="star_num = 4;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_star" x="250" y="608" name="inst_1199610A" locked="0" code="star_num = 17;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_star" x="365" y="352" name="inst_3A476A29" locked="0" code="star_num = 14;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_star" x="490" y="50" name="inst_97D4974E" locked="0" code="star_num = 4;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_star" x="928" y="448" name="inst_894727D7" locked="0" code="star_num = 10;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_star" x="896" y="214" name="inst_7973047E" locked="0" code="star_num = 9;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_star" x="235" y="576" name="inst_431A7509" locked="0" code="star_num = 18;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_star" x="365" y="80" name="inst_3439F951" locked="0" code="star_num = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_star" x="480" y="288" name="inst_24FD02B3" locked="0" code="star_num = 7;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_star" x="710" y="400" name="inst_F7287613" locked="0" code="star_num = 11;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_star" x="600" y="96" name="inst_81D68406" locked="0" code="star_num = 6;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_star" x="685" y="367" name="inst_11E98065" locked="0" code="star_num = 12;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_star" x="580" y="70" name="inst_55EB47DB" locked="0" code="star_num = 5;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_star" x="90" y="544" name="inst_9D1F3C14" locked="0" code="star_num = 19;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_star" x="448" y="500" name="inst_841AAE2A" locked="0" code="star_num = 13;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_star" x="455" y="45" name="inst_DA8B8F6D" locked="0" code="star_num = 3;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_star" x="665" y="335" name="inst_F3C04E25" locked="0" code="star_num = 8;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_star" x="400" y="45" name="inst_66B41D23" locked="0" code="star_num = 2;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_star" x="105" y="635" name="inst_BCB5B4B4" locked="0" code="star_num = 20;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_star" x="384" y="550" name="inst_752736D9" locked="0" code="star_num = 16;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_star" x="400" y="352" name="inst_2AA3BEED" locked="0" code="star_num = 15;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
