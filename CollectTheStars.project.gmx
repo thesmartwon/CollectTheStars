@@ -48,6 +48,18 @@
     <room>rooms\rm_lvl08_aquila</room>
     <room>rooms\rm_lvl09_pegasus</room>
     <room>rooms\rm_lvl10_andromeda</room>
+    <room>rooms\rm_lvl11_aries</room>
+    <room>rooms\rm_lvl12_taurus</room>
+    <room>rooms\rm_lvl13_cancer</room>
+    <room>rooms\rm_lvl14_libra</room>
+    <room>rooms\rm_lvl15_capricorn</room>
+    <room>rooms\rm_lvl16_virgo</room>
+    <room>rooms\rm_lvl17_pisces</room>
+    <room>rooms\rm_lvl18_gemini</room>
+    <room>rooms\rm_lvl19_aquarius</room>
+    <room>rooms\rm_lvl20_leo</room>
+    <room>rooms\rm_lvl21_scorpio</room>
+    <room>rooms\rm_lvl22_sagittarius</room>
   </rooms>
   <constants number="2">
     <constant name="point_x">0</constant>
