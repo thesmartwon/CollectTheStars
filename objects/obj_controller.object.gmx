@@ -2,7 +2,7 @@
 <object>
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
-  <visible>0</visible>
+  <visible>-1</visible>
   <depth>0</depth>
   <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
@@ -28,6 +28,8 @@
             <string>global.star_selected = noone;
 global.line_editing = noone;
 global.star_connections = ds_list_create();
+global.hint_counter = 0;
+hint_text = "";
 </string>
           </argument>
         </arguments>
@@ -51,6 +53,30 @@ global.star_connections = ds_list_create();
           <argument>
             <kind>1</kind>
             <string>ds_list_destroy(global.star_connections);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if (room != rm_menu)
+    global.hint_counter += 1;
 </string>
           </argument>
         </arguments>
@@ -83,6 +109,42 @@ global.star_connections = ds_list_create();
     }
     global.star_selected = noone;
     global.line_editing = noone;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if (global.hint_counter &gt; 60 * 3)
+{
+    draw_set_colour(c_black);
+    if (hint_text == "")
+    {
+        var hints = get_solution_hints(room);
+        hint_text = hints[random_range(0,array_length_1d(hints))];
+    }
+    draw_text(500,500,hint_text);
+}
+else
+{
+    hint_text = "";
 }
 </string>
           </argument>
