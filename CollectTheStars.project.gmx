@@ -9,6 +9,8 @@
     <sprite>sprites\spr_star</sprite>
     <sprite>sprites\spr_test</sprite>
     <sprite>sprites\spr_play</sprite>
+    <sprite>sprites\sprite8</sprite>
+    <sprite>sprites\spr_people</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_night</background>

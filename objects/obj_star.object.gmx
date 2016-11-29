@@ -198,6 +198,7 @@ else
     alpha = 190;
     //rotation_degrees = 0;
     subimage = 0;
+
 }
 
 draw_sprite_ext(sprite_index,subimage,x,y,1,1,false,c_white,alpha);
