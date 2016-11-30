@@ -18,11 +18,10 @@ else if (level == 2) //cassiopeia
 }
 else if (level == 3) //aries room
 {
-    var solution; solution[3] = 0; //allocate an array
+    var solution; solution[2] = 0; //allocate an array
     solution[0] = "1-2";
     solution[1] = "2-3";
     solution[2] = "3-4";
-    solution[3] = "2-4";
     return solution;
 }
 else if (level == 4) //ursa minor
@@ -57,16 +56,18 @@ else if (level == 6) //libra room
     solution[5] = "5-6";
     return solution;
 }
-else if (level == 7) //taurus room
+else if (level == 8) //taurus room
 {
     var solution; solution[6] = 0; //allocate an array
     solution[0] = "1-2";
     solution[1] = "2-3";
     solution[2] = "3-4";
-    solution[3] = "5-6";
-    solution[4] = "7-8";
-    solution[5] = "4-9";
-    solution[6] = "9-10";
+    solution[3] = "4-5";
+    solution[4] = "5-6";
+    solution[5] = "6-7";
+    solution[6] = "7-8";
+    solution[7] = "4-9";
+    solution[8] = "9-10";
     return solution;
 }
 else if (level == 8) //cygnus
