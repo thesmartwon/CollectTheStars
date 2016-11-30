@@ -203,7 +203,7 @@ else if (level == 15) //aquarius room
 }
 else if (level == 16) //pisces room
 {
-    var solution; solution[16] = 0; //allocate an array
+    var solution; solution[17] = 0; //allocate an array
     solution[0] = "1-2";
     solution[1] = "2-3";
     solution[2] = "3-4";
@@ -215,12 +215,14 @@ else if (level == 16) //pisces room
     solution[8] = "8-9";
     solution[9] = "10-11";
     solution[10] = "11-12";
-    solution[11] = "12-13";
-    solution[12] = "13-14";
+    solution[11] = "12-19";
+    solution[12] = "13-19";
     solution[13] = "14-15";
     solution[14] = "15-16";
     solution[15] = "16-17";
     solution[16] = "16-18";
+    solution[17] = "13-14";
+    solution[18] = "9-10";
     return solution;
 }
 else if (level == 17) //ursa major
@@ -311,7 +313,7 @@ else if (level == 20) //gemini room
 }
 else if (level == 21) //sag room
 {
-    var solution; solution[18] = 0; //allocate an array
+    var solution; solution[21] = 0; //allocate an array
     solution[0] = "1-2";
     solution[1] = "2-3";
     solution[2] = "3-4";
@@ -330,7 +332,9 @@ else if (level == 21) //sag room
     solution[15] = "15-16";
     solution[16] = "16-17";
     solution[17] = "17-18";
-    solution[18] = "3-18";
+    solution[19] = "3-5";
+    solution[20] = "13-18";
+    solution[21] = "13-16";
     return solution;
 }
 else if (level == 22) //orion
