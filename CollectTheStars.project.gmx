@@ -13,11 +13,21 @@
     <sprite>sprites\spr_star_perfect_connections</sprite>
     <sprite>sprites\spr_test</sprite>
     <sprite>sprites\spr_play</sprite>
-    <sprite>sprites\sprite8</sprite>
+    <sprite>sprites\spr_level</sprite>
     <sprite>sprites\spr_people</sprite>
     <sprite>sprites\spr_hintbubble</sprite>
     <sprite>sprites\spr_start</sprite>
     <sprite>sprites\spr_help</sprite>
+    <sprite>sprites\spr_1</sprite>
+    <sprite>sprites\spr_2</sprite>
+    <sprite>sprites\spr_3</sprite>
+    <sprite>sprites\spr_4</sprite>
+    <sprite>sprites\spr_5</sprite>
+    <sprite>sprites\spr_6</sprite>
+    <sprite>sprites\spr_7</sprite>
+    <sprite>sprites\spr_8</sprite>
+    <sprite>sprites\spr_9</sprite>
+    <sprite>sprites\spr_10</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_night</background>
