@@ -49,6 +49,7 @@
     <object>objects\obj_controller</object>
     <object>objects\obj_btn_play</object>
     <object>objects\obj_people</object>
+    <object>objects\obj_overlay</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_menu</room>
