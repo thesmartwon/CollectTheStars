@@ -26,6 +26,38 @@
           <argument>
             <kind>1</kind>
             <string>subimage = 0;
+rotation = random_range(-100,100);
+if (irandom(1) == 0)
+    rotation_speed = random_range(-0.5,-0.2);
+else
+    rotation_speed = random_range(0.2,0.5);
+
+part_emitter = part_emitter_create(global.star_part_system);
+part_emitter_region(global.star_part_system, part_emitter, 96-40, 96+40, 593-40, 593+40, ps_shape_ellipse, ps_distr_gaussian);
+part_emitter_stream(global.star_part_system,part_emitter,global.star_particle,-2);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="1" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>part_emitter_destroy(global.star_part_system,part_emitter);
 </string>
           </argument>
         </arguments>
@@ -97,7 +129,10 @@
             <kind>1</kind>
             <string>draw_sprite(sprite_index,0,x,y);
 
-draw_sprite_ext(spr_star_no_connections,subimage,96,199,2,2,0,c_white,255);
+if (abs(rotation) &gt; 100)
+    rotation_speed *= -1;
+rotation += rotation_speed;
+draw_sprite_ext(spr_star_no_connections,subimage,96,199,2,2,rotation,c_white,255);
 draw_sprite_ext(spr_star_bad_connections,subimage,96,321,2,2,0,c_white,255);
 draw_sprite_ext(spr_star_good_connections,subimage,96,447,2,2,0,c_white,255);
 draw_sprite_ext(spr_star_perfect_connections,subimage,96,593,2,2,0,c_white,255);
