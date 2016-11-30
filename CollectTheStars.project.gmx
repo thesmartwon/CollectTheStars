@@ -73,7 +73,11 @@
     <script>scripts\list_string.gml</script>
     <script>scripts\get_overlay_sprite.gml</script>
     <script>scripts\get_level_name.gml</script>
+    <script>scripts\draw_text_outline.gml</script>
   </scripts>
+  <fonts name="fonts">
+    <font>fonts\fnt_impact</font>
+  </fonts>
   <objects name="objects">
     <object>objects\obj_star</object>
     <object>objects\obj_line</object>
