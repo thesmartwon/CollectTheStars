@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto(rm_menu);
+            <string>with (obj_star)
+    instance_destroy();
+room_goto(rm_menu);
 </string>
           </argument>
         </arguments>
@@ -48,7 +50,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto(rm_menu);
+            <string>with (obj_star)
+    instance_destroy();
+room_goto(rm_menu);
 </string>
           </argument>
         </arguments>

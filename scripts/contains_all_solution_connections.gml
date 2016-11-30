@@ -13,9 +13,9 @@ var num_connection_solutions_with_star = ds_list_size(connection_solutions_with_
 if (num_connections != num_connection_solutions_with_star)
     return false;
 
-for (i = 0; i < num_connection_solutions_with_star; i += 1)
+for (var i = 0; i < num_connection_solutions_with_star; i += 1)
 {
-    //show_debug_message("checking list:" + string(connection_solution) + " for " + string(connections[|i]));
+    //show_debug_message("checking list:" + list_string(some_connections) + " for " + connection_solutions_with_star[|i]);
     if (!ds_list_contains(some_connections,connection_solutions_with_star[|i]))
     {
         ds_list_destroy(connection_solutions_with_star);

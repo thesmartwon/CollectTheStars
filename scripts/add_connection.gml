@@ -12,4 +12,4 @@ update_star_con_status(star1);
 update_star_con_status(star2);
 
 // Don't show a hint
-global.hint_counter = 0;
+obj_textbox.hint_counter = 0;
