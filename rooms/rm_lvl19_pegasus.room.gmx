@@ -67,6 +67,7 @@
     <instance objName="obj_star" x="325" y="485" name="inst_216769A7" locked="0" code="star_num = 10;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_star" x="205" y="500" name="inst_87CC6309" locked="0" code="star_num = 11;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_people" x="800" y="768" name="inst_F9FD7C3E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_back" x="32" y="32" name="inst_553DF770" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
