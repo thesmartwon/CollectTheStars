@@ -28,7 +28,6 @@
             <string>global.star_selected = noone;
 global.line_editing = noone;
 global.star_connections = ds_list_create();
-global.hint_counter = 0;
 
 global.star_part_system = part_system_create();
 part_system_depth(global.star_part_system,0);
@@ -74,30 +73,6 @@ hint_text = "";
         </arguments>
       </action>
     </event>
-    <event eventtype="3" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>if (room != rm_menu)
-    global.hint_counter += 1;
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
     <event eventtype="6" enumb="56">
       <action>
         <libid>1</libid>
@@ -131,13 +106,7 @@ if (global.line_editing != noone &amp;&amp; global.star_selected != noone &amp;&
 if (is_valid_solution(global.star_connections,room))
 {
     show_debug_message("level " + string(room) + " completed");
-    ds_list_clear(global.star_connections);
-    with (obj_star)
-        instance_destroy();
-    if (room != room_last)
-        room_goto_next();
-    else
-        room_goto(rm_menu);
+    instance_create(0,0,obj_overlay);
 }
 }
 </string>
@@ -162,24 +131,13 @@ if (is_valid_solution(global.star_connections,room))
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (global.hint_counter &gt; 60 * 10)
+            <string>
+if (room != 0)
 {
-    draw_set_colour(c_black);
-    with (obj_star)
-        draw_number = true;
-    if (hint_text == "")
-    {
-        var hints = get_solution_hints(room);
-        hint_text = hints[random_range(0,array_length_1d(hints))];
-    }
-    draw_sprite_ext(spr_hintbubble,0,500,500,1,1,false,c_white,1);
-    draw_text(500,500,hint_text);
-}
-else
-{
-    hint_text = "";
-    with (obj_star)
-        draw_number = false;
+    draw_set_colour(c_white);
+    draw_set_font(fnt_impact);
+    draw_set_halign(fa_right);
+    draw_text_outline(room_width - 32,32,get_level_name(room),5,c_black,8);
 }
 </string>
           </argument>
