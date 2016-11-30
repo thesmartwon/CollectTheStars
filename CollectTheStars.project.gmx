@@ -10,6 +10,7 @@
   <sprites name="sprites">
     <sprite>sprites\spr_star_no_connections</sprite>
     <sprite>sprites\spr_star</sprite>
+    <sprite>sprites\spr_star_mask</sprite>
     <sprite>sprites\spr_star_bad_connections</sprite>
     <sprite>sprites\spr_star_good_connections</sprite>
     <sprite>sprites\spr_star_perfect_connections</sprite>
