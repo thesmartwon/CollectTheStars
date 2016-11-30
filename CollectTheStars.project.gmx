@@ -15,6 +15,9 @@
     <sprite>sprites\spr_play</sprite>
     <sprite>sprites\sprite8</sprite>
     <sprite>sprites\spr_people</sprite>
+    <sprite>sprites\spr_hintbubble</sprite>
+    <sprite>sprites\spr_start</sprite>
+    <sprite>sprites\spr_help</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_night</background>

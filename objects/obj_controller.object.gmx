@@ -168,6 +168,7 @@ if (is_valid_solution(global.star_connections,room))
         var hints = get_solution_hints(room);
         hint_text = hints[random_range(0,array_length_1d(hints))];
     }
+    draw_sprite_ext(spr_hintbubble,0,500,500,1,1,false,c_white,1);
     draw_text(500,500,hint_text);
 }
 else
