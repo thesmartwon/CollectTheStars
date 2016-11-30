@@ -12,6 +12,5 @@ else
 //show_debug_message("size " + string(ds_list_size(connections_with_star)));
 star.has_only_correct_connections = contains_only_solution_connections(connections_with_star);
 star.has_all_correct_connections = contains_all_solution_connections(star.star_num,connections_with_star);
-if (star.has_only_correct_connections)
-    global.hint_counter = 0;
+
 ds_list_destroy(connections_with_star);

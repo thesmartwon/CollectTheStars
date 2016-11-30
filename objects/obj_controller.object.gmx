@@ -126,10 +126,9 @@ hint_text = "";
     global.star_selected = noone;
     global.line_editing = noone;
 }
-show_debug_message("hi");
 if (is_valid_solution(global.star_connections,room))
 {
-    show_debug_message("level completed");
+    show_debug_message("level " + string(room) + " completed");
     ds_list_clear(global.star_connections);
     with (obj_star)
         instance_destroy();
@@ -160,9 +159,11 @@ if (is_valid_solution(global.star_connections,room))
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (global.hint_counter &gt; 60 * 15)
+            <string>if (global.hint_counter &gt; 60 * 10)
 {
     draw_set_colour(c_black);
+    with (obj_star)
+        draw_number = true;
     if (hint_text == "")
     {
         var hints = get_solution_hints(room);
@@ -174,6 +175,8 @@ if (is_valid_solution(global.star_connections,room))
 else
 {
     hint_text = "";
+    with (obj_star)
+        draw_number = false;
 }
 </string>
           </argument>

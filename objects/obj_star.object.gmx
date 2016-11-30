@@ -38,6 +38,7 @@ if (irandom(1) == 0)
 else
     rotation_speed = random_range(0.2,0.5);
 emitter_activated = false;
+draw_number = false;
 
 part_emitter = part_emitter_create(global.star_part_system);
 </string>
@@ -62,7 +63,7 @@ part_emitter = part_emitter_create(global.star_part_system);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>show_debug_message(string(star_num) + " destroyed");
+            <string>//show_debug_message(string(star_num) + " destroyed");
 part_emitter_destroy(global.star_part_system,part_emitter);
 </string>
           </argument>
@@ -90,14 +91,14 @@ part_emitter_destroy(global.star_part_system,part_emitter);
 if (has_all_correct_connections &amp;&amp; !emitter_activated)
 {
     emitter_activated = true;
-    show_debug_message(string(star_num) + " emitting at " + string(x) + "," + string(y));
+    //show_debug_message(string(star_num) + " emitting at " + string(x) + "," + string(y));
     part_emitter_region(global.star_part_system, part_emitter, x-20, x+20, y-20, y+20, ps_shape_ellipse, ps_distr_gaussian);
     part_emitter_stream(global.star_part_system,part_emitter,global.star_particle,-3);
 }
 else if (!has_all_correct_connections &amp;&amp; emitter_activated)
 {
     emitter_activated = false;
-    show_debug_message(string(star_num) + "stopped emitting");
+    //show_debug_message(string(star_num) + "stopped emitting");
     part_emitter_clear(global.star_part_system,part_emitter);
 }
 </string>
@@ -222,8 +223,11 @@ else
 
 subimage += 1;
 draw_sprite_ext(sprite_index,subimage,x,y,1,1,rotation,c_white,255);
-//draw_set_colour(c_black);
-//draw_text(x-5,y-5,string(star_num));
+if (draw_number)
+{
+    draw_set_colour(c_black);
+    draw_text(x+20,y-5,string(star_num));
+}
 </string>
           </argument>
         </arguments>

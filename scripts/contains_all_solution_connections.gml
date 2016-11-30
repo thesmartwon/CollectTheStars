@@ -7,8 +7,8 @@ var connection_solution = get_solutions(room);
 var connection_solutions_with_star = get_connections_with2(star_num, connection_solution);
 var num_connection_solutions_with_star = ds_list_size(connection_solutions_with_star);
 
-show_debug_message("connections with star" + string(star_num) + ":" + list_string(some_connections));
-show_debug_message("solutions with star " + string(star_num) + ":" + list_string(connection_solutions_with_star));
+//show_debug_message("connections with star" + string(star_num) + ":" + list_string(some_connections));
+//show_debug_message("solutions with star " + string(star_num) + ":" + list_string(connection_solutions_with_star));
 
 if (num_connections != num_connection_solutions_with_star)
     return false;

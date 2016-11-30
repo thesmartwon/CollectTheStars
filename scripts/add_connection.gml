@@ -10,3 +10,6 @@ ds_list_add(all_connections,str_rep);
 // Update the correct connection status
 update_star_con_status(star1);
 update_star_con_status(star2);
+
+// Don't show a hint
+global.hint_counter = 0;
