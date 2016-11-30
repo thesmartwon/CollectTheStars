@@ -60,7 +60,7 @@
     <instance objName="obj_star" x="256" y="288" name="inst_D4FC891D" locked="0" code="star_num = 2;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_people" x="864" y="768" name="inst_39B3CEBE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_back" x="32" y="32" name="inst_56CE0665" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_textbox" x="800" y="544" name="inst_3F09789A" locked="0" code="" scaleX="-1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="&lt;undefined&gt;" x="800" y="544" name="inst_3F09789A" locked="0" code="" scaleX="-1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
