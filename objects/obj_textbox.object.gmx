@@ -72,7 +72,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (hint_counter &gt; 60 * 2)
+            <string>if (hint_counter &gt; 60 * 8.5)
 {
     draw_self();
     draw_set_colour(c_black);

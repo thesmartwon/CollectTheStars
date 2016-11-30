@@ -103,11 +103,6 @@ if (global.line_editing != noone &amp;&amp; global.star_selected != noone &amp;&
     global.star_selected = noone;
     global.line_editing = noone;
 }
-if (is_valid_solution(global.star_connections,room))
-{
-    show_debug_message("level " + string(room) + " completed");
-    instance_create(0,0,obj_overlay);
-}
 }
 </string>
           </argument>
