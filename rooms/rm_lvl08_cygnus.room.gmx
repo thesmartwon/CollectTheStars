@@ -61,9 +61,9 @@
     <instance objName="obj_star" x="210" y="340" name="inst_5E8E4383" locked="0" code="star_num = 3;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_star" x="165" y="335" name="inst_82498078" locked="0" code="star_num = 2;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_star" x="105" y="310" name="inst_8A60D1ED" locked="0" code="star_num = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_people" x="256" y="768" name="inst_7ECCFB57" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_people" x="96" y="768" name="inst_7ECCFB57" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_back" x="32" y="32" name="inst_4DABCB92" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="&lt;undefined&gt;" x="320" y="544" name="inst_EA338734" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_textbox" x="128" y="512" name="inst_EA338734" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

@@ -226,6 +226,7 @@ draw_sprite_ext(sprite_index,subimage,x,y,1,1,rotation,c_white,255);
 if (draw_number)
 {
     draw_set_colour(c_black);
+    draw_set_font(fnt_hint);
     draw_text(x+20,y-5,string(star_num));
 }
 </string>

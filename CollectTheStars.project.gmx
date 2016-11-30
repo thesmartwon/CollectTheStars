@@ -101,6 +101,7 @@
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_impact</font>
+    <font>fonts\fnt_hint</font>
   </fonts>
   <objects name="objects">
     <object>objects\obj_star</object>
@@ -137,6 +138,7 @@
       <object>objects\object13</object>
     </objects>
     <object>objects\obj_back</object>
+    <object>objects\obj_textbox</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_menu</room>
