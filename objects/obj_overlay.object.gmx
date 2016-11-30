@@ -28,6 +28,8 @@
             <string>hold_time = 120;
 held_for = 0;
 sprite_index = get_overlay_sprite(room);
+
+audio_play_sound(snd_complete, 1, false);
 </string>
           </argument>
         </arguments>

@@ -95,6 +95,8 @@
           <argument>
             <kind>1</kind>
             <string>room_goto_next();
+audio_stop_sound(snd_back_menu);
+audio_play_sound(choose(snd_back1,snd_back2),1,true);
 </string>
           </argument>
         </arguments>

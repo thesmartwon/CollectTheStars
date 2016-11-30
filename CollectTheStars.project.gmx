@@ -4,7 +4,14 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\snd_back1</sound>
+    <sound>sound\snd_back2</sound>
+    <sound>sound\snd_back_menu</sound>
+    <sound>sound\snd_incorrect</sound>
+    <sound>sound\snd_correct</sound>
+    <sound>sound\snd_complete</sound>
+  </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_star_no_connections</sprite>
     <sprite>sprites\spr_star</sprite>

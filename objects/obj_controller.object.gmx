@@ -45,6 +45,7 @@ part_type_life(global.star_particle,50,100);
 part_type_blend(global.star_particle,false);
 
 hint_text = "";
+audio_play_sound(snd_back_menu, 1, true);
 </string>
           </argument>
         </arguments>
