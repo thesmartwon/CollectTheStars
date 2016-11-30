@@ -4,7 +4,9 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\sound0</sound>
+  </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_star_no_connections</sprite>
     <sprite>sprites\spr_star</sprite>
@@ -18,40 +20,31 @@
     <sprite>sprites\spr_people</sprite>
     <sprite>sprites\spr_hintbubble</sprite>
     <sprite>sprites\spr_start</sprite>
+    <sprite>sprites\sprite14</sprite>
     <sprite>sprites\spr_help</sprite>
-    <sprite>sprites\spr_1</sprite>
-    <sprite>sprites\spr_2</sprite>
-    <sprite>sprites\spr_3</sprite>
-    <sprite>sprites\spr_4</sprite>
-    <sprite>sprites\spr_5</sprite>
-    <sprite>sprites\spr_6</sprite>
-    <sprite>sprites\spr_7</sprite>
-    <sprite>sprites\spr_8</sprite>
-    <sprite>sprites\spr_9</sprite>
-    <sprite>sprites\spr_10</sprite>
-    <sprites name="sprClouds">
-      <sprite>sprites\sprite24</sprite>
-      <sprite>sprites\sprite26</sprite>
-      <sprite>sprites\sprite25</sprite>
-      <sprite>sprites\sprite27</sprite>
-      <sprite>sprites\sprite28</sprite>
-      <sprite>sprites\sprite29</sprite>
-      <sprite>sprites\sprite30</sprite>
-      <sprite>sprites\sprite31</sprite>
-      <sprite>sprites\sprite32</sprite>
-      <sprite>sprites\sprite33</sprite>
-      <sprite>sprites\sprite34</sprite>
-      <sprite>sprites\sprite35</sprite>
-      <sprite>sprites\sprite36</sprite>
-      <sprite>sprites\sprite37</sprite>
-      <sprite>sprites\sprite38</sprite>
-      <sprite>sprites\sprite39</sprite>
-      <sprite>sprites\sprite40</sprite>
-      <sprite>sprites\sprite41</sprite>
-      <sprite>sprites\sprite42</sprite>
-      <sprite>sprites\sprite43</sprite>
-      <sprite>sprites\sprite44</sprite>
-      <sprite>sprites\sprite14</sprite>
+    <sprites name="overlay sprite">
+      <sprite>sprites\spr_1</sprite>
+      <sprite>sprites\spr_2</sprite>
+      <sprite>sprites\spr_3</sprite>
+      <sprite>sprites\spr_4</sprite>
+      <sprite>sprites\spr_5</sprite>
+      <sprite>sprites\spr_6</sprite>
+      <sprite>sprites\spr_7</sprite>
+      <sprite>sprites\spr_8</sprite>
+      <sprite>sprites\spr_9</sprite>
+      <sprite>sprites\spr_10</sprite>
+      <sprite>sprites\spr_11</sprite>
+      <sprite>sprites\spr_12</sprite>
+      <sprite>sprites\spr_13</sprite>
+      <sprite>sprites\spr_14</sprite>
+      <sprite>sprites\spr_15</sprite>
+      <sprite>sprites\spr_16</sprite>
+      <sprite>sprites\spr_17</sprite>
+      <sprite>sprites\spr_18</sprite>
+      <sprite>sprites\spr_19</sprite>
+      <sprite>sprites\spr_20</sprite>
+      <sprite>sprites\spr_21</sprite>
+      <sprite>sprites\spr_22</sprite>
     </sprites>
     <sprite>sprites\spr_help_window</sprite>
     <sprite>sprites\spr_back</sprite>
@@ -91,39 +84,15 @@
     <object>objects\obj_line</object>
     <object>objects\obj_controller</object>
     <object>objects\obj_btn_play</object>
-<<<<<<< HEAD
-    <object>objects\obj_btn_level</object>
-=======
     <object>objects\obj_btn_help</object>
     <object>objects\obj_help_window</object>
->>>>>>> origin/master
     <object>objects\obj_people</object>
     <object>objects\obj_overlay</object>
     <objects name="levelclouds">
       <object>objects\objlvl22</object>
-      <object>objects\object7</object>
-      <object>objects\object8</object>
-      <object>objects\object9</object>
-      <object>objects\objl_vl4</object>
-      <object>objects\object12</object>
-      <object>objects\object13</object>
-      <object>objects\object14</object>
-      <object>objects\object15</object>
-      <object>objects\object16</object>
-      <object>objects\object17</object>
-      <object>objects\object18</object>
-      <object>objects\object19</object>
-      <object>objects\object20</object>
-      <object>objects\object21</object>
-      <object>objects\object22</object>
-      <object>objects\object23</object>
-      <object>objects\object24</object>
-      <object>objects\object25</object>
-      <object>objects\object26</object>
-      <object>objects\object27</object>
-      <object>objects\object28</object>
     </objects>
     <object>objects\obj_back</object>
+    <object>objects\obj_textbox</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_menu</room>

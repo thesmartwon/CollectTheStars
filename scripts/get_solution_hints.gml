@@ -8,7 +8,7 @@ if (level == 1) //canis minor
     solution[2] = "Connect 1-2.";
     return solution;
 } 
-else if (level == 2) //cassiopeia
+else if (level == 2) //cassie
 {
     var solution; solution[2] = 0; //allocate an array
     solution[0] = "The queen lies down.";
@@ -117,66 +117,62 @@ else if (level == 15) //aquarius
     var solution; solution[2] = 0; //allocate an array
     solution[0] = "The bearer of water graces.";
     solution[1] = "a coat hanger? in the sky?";
-<<<<<<< HEAD
-    solution[2] = "only one star connects to multiple";
-=======
     solution[2] = "Only the fourth star from the top connects to multiple.";
->>>>>>> origin/master
     return solution;
 }
-else if (level == 16) //pisces
+else if (level == 16) //andromeda
 {
     var solution; solution[2] = 0; //allocate an array
-    solution[0] = "one fish, two fish";
-    solution[1] = "like a lasso, from top to bottom to right";
-    solution[2] = "two stars have multiple friends";
+    solution[0] = "hear the roar, obey the king";
+    solution[1] = "a coat hanger? in the sky?";
+    solution[2] = "only the fourth star from the top connects to multiple";
     return solution;
 }
-else if (level == 17) //ursa major
+else if (level == 17) //andromeda
 {
     var solution; solution[2] = 0; //allocate an array
-    solution[0] = "the mother grizzly doesnt rest at night";
-    solution[1] = "the connections spread widely across the sky";
-    solution[2] = "three stars connect to multiple";
+    solution[0] = "hear the roar, obey the king";
+    solution[1] = "a coat hanger? in the sky?";
+    solution[2] = "only the fourth star from the top connects to multiple";
     return solution;
 }
-else if (level == 18) //canis major
+else if (level == 18) //andromeda
 {
     var solution; solution[2] = 0; //allocate an array
-    solution[0] = "the beast that hunts at the foot of mankind";
-    solution[1] = "he stands proud, tail left, head right!";
-    solution[2] = "six stars have more than one friend";
+    solution[0] = "hear the roar, obey the king";
+    solution[1] = "a coat hanger? in the sky?";
+    solution[2] = "only the fourth star from the top connects to multiple";
     return solution;
 }
-else if (level == 19) //pegasus
+else if (level == 19) //andromeda
 {
     var solution; solution[2] = 0; //allocate an array
-    solution[0] = "hooves storm beneath vast wings";
-    solution[1] = "three horizontal lines, but connect in the middle";
-    solution[2] = "only four stars have multiple connections";
+    solution[0] = "hear the roar, obey the king";
+    solution[1] = "a coat hanger? in the sky?";
+    solution[2] = "only the fourth star from the top connects to multiple";
     return solution;
 }
-else if (level == 20) //gemini
+else if (level == 20) //andromeda
 {
     var solution; solution[2] = 0; //allocate an array
-    solution[0] = "twins dance beneath the moon";
-    solution[1] = "two people, holding hands";
-    solution[2] = "only four stars have multiple connections";
+    solution[0] = "hear the roar, obey the king";
+    solution[1] = "a coat hanger? in the sky?";
+    solution[2] = "only the fourth star from the top connects to multiple";
     return solution;
 }
-else if (level == 21) //sagittarius
+else if (level == 21) //andromeda
 {
     var solution; solution[2] = 0; //allocate an array
-    solution[0] = "the archer strikes deadly";
-    solution[1] = "body to the left, bow to the right";
-    solution[2] = "seven stars have multiple connections";
+    solution[0] = "hear the roar, obey the king";
+    solution[1] = "a coat hanger? in the sky?";
+    solution[2] = "only the fourth star from the top connects to multiple";
     return solution;
 }
-else if (level == 22) //orion
+else if (level == 22) //andromeda
 {
     var solution; solution[2] = 0; //allocate an array
-    solution[0] = "the hunter stalks the sky";
-    solution[1] = "his bow is to the top";
-    solution[2] = "only four stars have multiple connections";
+    solution[0] = "hear the roar, obey the king";
+    solution[1] = "a coat hanger? in the sky?";
+    solution[2] = "only the fourth star from the top connects to multiple";
     return solution;
 }
