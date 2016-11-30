@@ -56,7 +56,7 @@ else if (level == 6) //libra room
     solution[5] = "5-6";
     return solution;
 }
-else if (level == 8) //taurus room
+else if (level == 7) //taurus room
 {
     var solution; solution[6] = 0; //allocate an array
     solution[0] = "1-2";
