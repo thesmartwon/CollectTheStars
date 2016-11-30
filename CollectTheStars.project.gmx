@@ -45,6 +45,7 @@
       <sprite>sprites\spr_21</sprite>
       <sprite>sprites\spr_22</sprite>
     </sprites>
+    <sprite>sprites\spr_help_window</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_night</background>
@@ -69,12 +70,15 @@
     <script>scripts\update_star_con_status.gml</script>
     <script>scripts\connection_contains.gml</script>
     <script>scripts\list_string.gml</script>
+    <script>scripts\get_overlay_sprite.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\obj_star</object>
     <object>objects\obj_line</object>
     <object>objects\obj_controller</object>
     <object>objects\obj_btn_play</object>
+    <object>objects\obj_btn_help</object>
+    <object>objects\obj_help_window</object>
     <object>objects\obj_people</object>
     <object>objects\obj_overlay</object>
     <objects name="levelclouds">
