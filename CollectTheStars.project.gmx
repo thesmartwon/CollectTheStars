@@ -8,6 +8,7 @@
   <sprites name="sprites">
     <sprite>sprites\spr_star_no_connections</sprite>
     <sprite>sprites\spr_star</sprite>
+    <sprite>sprites\spr_star_mask</sprite>
     <sprite>sprites\spr_star_bad_connections</sprite>
     <sprite>sprites\spr_star_good_connections</sprite>
     <sprite>sprites\spr_star_perfect_connections</sprite>
@@ -52,6 +53,7 @@
       <sprite>sprites\sprite44</sprite>
       <sprite>sprites\sprite14</sprite>
     </sprites>
+    <sprite>sprites\spr_help_window</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_night</background>
@@ -76,13 +78,24 @@
     <script>scripts\update_star_con_status.gml</script>
     <script>scripts\connection_contains.gml</script>
     <script>scripts\list_string.gml</script>
+    <script>scripts\get_overlay_sprite.gml</script>
+    <script>scripts\get_level_name.gml</script>
+    <script>scripts\draw_text_outline.gml</script>
   </scripts>
+  <fonts name="fonts">
+    <font>fonts\fnt_impact</font>
+  </fonts>
   <objects name="objects">
     <object>objects\obj_star</object>
     <object>objects\obj_line</object>
     <object>objects\obj_controller</object>
     <object>objects\obj_btn_play</object>
+<<<<<<< HEAD
     <object>objects\obj_btn_level</object>
+=======
+    <object>objects\obj_btn_help</object>
+    <object>objects\obj_help_window</object>
+>>>>>>> origin/master
     <object>objects\obj_people</object>
     <object>objects\obj_overlay</object>
     <objects name="levelclouds">
