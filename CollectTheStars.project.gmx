@@ -13,11 +13,11 @@
     <sprite>sprites\spr_star_perfect_connections</sprite>
     <sprite>sprites\spr_test</sprite>
     <sprite>sprites\spr_play</sprite>
-    <sprite>sprites\sprite8</sprite>
     <sprite>sprites\spr_people</sprite>
     <sprite>sprites\spr_hintbubble</sprite>
     <sprite>sprites\spr_start</sprite>
     <sprite>sprites\spr_help</sprite>
+    <sprite>sprites\spr_help_window</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_night</background>
@@ -50,6 +50,8 @@
     <object>objects\obj_btn_play</object>
     <object>objects\obj_people</object>
     <object>objects\obj_overlay</object>
+    <object>objects\obj_btn_help</object>
+    <object>objects\obj_help_window</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_menu</room>

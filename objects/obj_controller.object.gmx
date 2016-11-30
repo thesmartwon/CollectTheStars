@@ -115,7 +115,9 @@ hint_text = "";
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (global.line_editing != noone &amp;&amp; global.star_selected != noone &amp;&amp;
+            <string>if (room != rm_menu)
+{
+if (global.line_editing != noone &amp;&amp; global.star_selected != noone &amp;&amp;
     !position_meeting(window_mouse_get_x(),window_mouse_get_y(),global.star_selected))
 {
     show_debug_message("connection cancelled");
@@ -136,6 +138,7 @@ if (is_valid_solution(global.star_connections,room))
         room_goto_next();
     else
         room_goto(rm_menu);
+}
 }
 </string>
           </argument>
