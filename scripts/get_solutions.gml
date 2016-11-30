@@ -96,7 +96,7 @@ else if (level == 9) //capricorn room
     solution[6] = "7-8";
     solution[7] = "8-9";
     solution[8] = "9-10";
-    solution[9] = "10-2";
+    solution[9] = "2-10";
     return solution;
 }
 else if (level == 10) //leo room
@@ -110,7 +110,7 @@ else if (level == 10) //leo room
     solution[5] = "6-7";
     solution[6] = "7-8";
     solution[7] = "8-9";
-    solution[8] = "9-4";
+    solution[8] = "4-9";
     return solution;
 }
 else if (level == 11) //andromeda
@@ -180,7 +180,7 @@ else if (level == 14) //scorpio room
     solution[15] = "16-17";
     solution[16] = "17-18";
     solution[17] = "18-19";
-    solution[18] = "19-13";
+    solution[18] = "13-19";
     return solution;
 }
 else if (level == 15) //aquarius room
@@ -209,7 +209,7 @@ else if (level == 16) //pisces room
     solution[2] = "3-4";
     solution[3] = "4-5";
     solution[4] = "5-6";
-    solution[5] = "6-1";
+    solution[5] = "1-6";
     solution[6] = "1-7";
     solution[7] = "7-8";
     solution[8] = "8-9";
@@ -330,7 +330,7 @@ else if (level == 21) //sag room
     solution[15] = "15-16";
     solution[16] = "16-17";
     solution[17] = "17-18";
-    solution[18] = "18-3";
+    solution[18] = "3-18";
     return solution;
 }
 else if (level == 22) //orion

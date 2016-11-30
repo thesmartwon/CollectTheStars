@@ -20,8 +20,8 @@ else if (level == 3) //aries
 {
     var solution; solution[2] = 0; //allocate an array
     solution[0] = "baa baa";
-    solution[1] = "two has two, but not three for four";
-    solution[2] = "try connecting the second star from the left to another";
+    solution[1] = "all in order now";
+    solution[2] = "connect in order 1-2-3-4";
     return solution;
 } 
 else if (level == 4) //ursa minor
@@ -68,15 +68,111 @@ else if (level == 9) //capricorn
 {
     var solution; solution[2] = 0; //allocate an array
     solution[0] = "baa says the animal in the sea";
-    solution[1] = "a large triangle with two lines in the sky";
-    solution[2] = "When you 5, look to 4 3 2 1";
+    solution[1] = "a large triangle with a little line to the right";
+    solution[2] = "the second star from the right has more than one connection";
     return solution;
 } 
-else if (level == 10) //cassie
+else if (level == 10) //leo
 {
     var solution; solution[2] = 0; //allocate an array
-    solution[0] = "Try 1 2 3 4 5";
-    solution[1] = "Remember, a 1 looks like 2 3 4 5";
-    solution[2] = "When you 5, look to 4 3 2 1";
+    solution[0] = "hear the roar, obey the king";
+    solution[1] = "a coat hanger? in the sky?";
+    solution[2] = "only the fourth star from the top connects to multiple";
+    return solution;
+}
+else if (level == 11) //andromeda
+{
+    var solution; solution[2] = 0; //allocate an array
+    solution[0] = "the princess beckons";
+    solution[1] = "a aharp v stretches to the right";
+    solution[2] = "only the center left star connects to multiple";
+    return solution;
+}
+else if (level == 12) //virgo
+{
+    var solution; solution[2] = 0; //allocate an array
+    solution[0] = "the pure maiden has a place in the sky";
+    solution[1] = "a box with arms, maybe? four, i think";
+    solution[2] = "four stars have multiple connections";
+    return solution;
+}
+else if (level == 13) //aquila
+{
+    var solution; solution[2] = 0; //allocate an array
+    solution[0] = "the great raptor soars in the night";
+    solution[1] = "quite like a kite, with a string to the bottom left";
+    solution[2] = "only one star connects to multiple";
+    return solution;
+}
+else if (level == 14) //scorpio
+{
+    var solution; solution[2] = 0; //allocate an array
+    solution[0] = "see the pinchers, watch the sting";
+    solution[1] = "a small circle, with a long long tail";
+    solution[2] = "only one star connects to multiple";
+    return solution;
+}
+else if (level == 15) //aquarius
+{
+    var solution; solution[2] = 0; //allocate an array
+    solution[0] = "the bearer of water graces";
+    solution[1] = "a coat hanger? in the sky?";
+    solution[2] = "only the fourth star from the top connects to multiple";
+    return solution;
+}
+else if (level == 16) //andromeda
+{
+    var solution; solution[2] = 0; //allocate an array
+    solution[0] = "hear the roar, obey the king";
+    solution[1] = "a coat hanger? in the sky?";
+    solution[2] = "only the fourth star from the top connects to multiple";
+    return solution;
+}
+else if (level == 17) //andromeda
+{
+    var solution; solution[2] = 0; //allocate an array
+    solution[0] = "hear the roar, obey the king";
+    solution[1] = "a coat hanger? in the sky?";
+    solution[2] = "only the fourth star from the top connects to multiple";
+    return solution;
+}
+else if (level == 18) //andromeda
+{
+    var solution; solution[2] = 0; //allocate an array
+    solution[0] = "hear the roar, obey the king";
+    solution[1] = "a coat hanger? in the sky?";
+    solution[2] = "only the fourth star from the top connects to multiple";
+    return solution;
+}
+else if (level == 19) //andromeda
+{
+    var solution; solution[2] = 0; //allocate an array
+    solution[0] = "hear the roar, obey the king";
+    solution[1] = "a coat hanger? in the sky?";
+    solution[2] = "only the fourth star from the top connects to multiple";
+    return solution;
+}
+else if (level == 20) //andromeda
+{
+    var solution; solution[2] = 0; //allocate an array
+    solution[0] = "hear the roar, obey the king";
+    solution[1] = "a coat hanger? in the sky?";
+    solution[2] = "only the fourth star from the top connects to multiple";
+    return solution;
+}
+else if (level == 21) //andromeda
+{
+    var solution; solution[2] = 0; //allocate an array
+    solution[0] = "hear the roar, obey the king";
+    solution[1] = "a coat hanger? in the sky?";
+    solution[2] = "only the fourth star from the top connects to multiple";
+    return solution;
+}
+else if (level == 22) //andromeda
+{
+    var solution; solution[2] = 0; //allocate an array
+    solution[0] = "hear the roar, obey the king";
+    solution[1] = "a coat hanger? in the sky?";
+    solution[2] = "only the fourth star from the top connects to multiple";
     return solution;
 }

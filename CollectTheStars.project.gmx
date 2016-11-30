@@ -17,6 +17,7 @@
     <sprite>sprites\spr_people</sprite>
     <sprite>sprites\spr_hintbubble</sprite>
     <sprite>sprites\spr_start</sprite>
+    <sprite>sprites\sprite14</sprite>
     <sprite>sprites\spr_help</sprite>
     <sprite>sprites\spr_1</sprite>
     <sprite>sprites\spr_2</sprite>
@@ -60,6 +61,9 @@
     <object>objects\obj_btn_play</object>
     <object>objects\obj_people</object>
     <object>objects\obj_overlay</object>
+    <objects name="levelclouds">
+      <object>objects\objlvl22</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_menu</room>
@@ -85,6 +89,7 @@
     <room>rooms\rm_lvl20_gemini</room>
     <room>rooms\rm_lvl21_sagittarius</room>
     <room>rooms\rm_lvl22_orion</room>
+    <room>rooms\rm_levelselect</room>
   </rooms>
   <constants number="2">
     <constant name="point_x">0</constant>
