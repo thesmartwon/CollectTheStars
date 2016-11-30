@@ -4,7 +4,9 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\sound0</sound>
+  </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_star_no_connections</sprite>
     <sprite>sprites\spr_star</sprite>
@@ -19,16 +21,30 @@
     <sprite>sprites\spr_start</sprite>
     <sprite>sprites\sprite14</sprite>
     <sprite>sprites\spr_help</sprite>
-    <sprite>sprites\spr_1</sprite>
-    <sprite>sprites\spr_2</sprite>
-    <sprite>sprites\spr_3</sprite>
-    <sprite>sprites\spr_4</sprite>
-    <sprite>sprites\spr_5</sprite>
-    <sprite>sprites\spr_6</sprite>
-    <sprite>sprites\spr_7</sprite>
-    <sprite>sprites\spr_8</sprite>
-    <sprite>sprites\spr_9</sprite>
-    <sprite>sprites\spr_10</sprite>
+    <sprites name="overlay sprite">
+      <sprite>sprites\spr_1</sprite>
+      <sprite>sprites\spr_2</sprite>
+      <sprite>sprites\spr_3</sprite>
+      <sprite>sprites\spr_4</sprite>
+      <sprite>sprites\spr_5</sprite>
+      <sprite>sprites\spr_6</sprite>
+      <sprite>sprites\spr_7</sprite>
+      <sprite>sprites\spr_8</sprite>
+      <sprite>sprites\spr_9</sprite>
+      <sprite>sprites\spr_10</sprite>
+      <sprite>sprites\spr_11</sprite>
+      <sprite>sprites\spr_12</sprite>
+      <sprite>sprites\spr_13</sprite>
+      <sprite>sprites\spr_14</sprite>
+      <sprite>sprites\spr_15</sprite>
+      <sprite>sprites\spr_16</sprite>
+      <sprite>sprites\spr_17</sprite>
+      <sprite>sprites\spr_18</sprite>
+      <sprite>sprites\spr_19</sprite>
+      <sprite>sprites\spr_20</sprite>
+      <sprite>sprites\spr_21</sprite>
+      <sprite>sprites\spr_22</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_night</background>
