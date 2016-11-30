@@ -7,8 +7,8 @@
   <coltolerance>0</coltolerance>
   <sepmasks>0</sepmasks>
   <bboxmode>0</bboxmode>
-  <bbox_left>166</bbox_left>
-  <bbox_right>917</bbox_right>
+  <bbox_left>165</bbox_left>
+  <bbox_right>916</bbox_right>
   <bbox_top>12</bbox_top>
   <bbox_bottom>571</bbox_bottom>
   <HTile>0</HTile>
@@ -17,8 +17,8 @@
     <TextureGroup0>0</TextureGroup0>
   </TextureGroups>
   <For3D>0</For3D>
-  <width>1027</width>
-  <height>769</height>
+  <width>1024</width>
+  <height>768</height>
   <frames>
     <frame index="0">images\spr_9_0.png</frame>
   </frames>
