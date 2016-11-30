@@ -1,6 +1,6 @@
-/// get_connections_with(star_number)
+/// get_connections_with(star_number, connections)
 var star_number = argument0;
-var all_connections = global.star_connections;
+var all_connections = argument1;
 
 var new_list = ds_list_create();
 
