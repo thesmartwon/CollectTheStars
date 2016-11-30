@@ -127,13 +127,13 @@ if (global.line_editing != noone &amp;&amp; global.star_selected != noone &amp;&
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
-if (room != 0)
+            <string>if (room != 0)
 {
     draw_set_colour(c_white);
     draw_set_font(fnt_impact);
     draw_set_halign(fa_right);
-    draw_text_outline(room_width - 32,32,get_level_name(room),5,c_black,8);
+    var text = string(room) + " - " + string(get_level_name(room));
+    draw_text_outline(room_width - 32,32,text,5,c_black,8);
 }
 </string>
           </argument>

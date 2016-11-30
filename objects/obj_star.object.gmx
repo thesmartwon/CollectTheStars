@@ -124,7 +124,7 @@ else if (!has_all_correct_connections &amp;&amp; emitter_activated)
           <argument>
             <kind>1</kind>
             <string>// Ending/cancelling line
-if (global.star_selected != noone &amp;&amp; !is_valid_solution(global.star_connections,room))
+if (global.star_selected != noone)
 {
 var connection = make_connection_string(star_num,global.star_selected.star_num);
 if (global.star_selected != id &amp;&amp; ds_list_find_index(global.star_connections,connection) == -1)

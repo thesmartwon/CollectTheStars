@@ -85,7 +85,7 @@
     }
     draw_set_halign(fa_center);
     draw_set_font(fnt_hint);
-    if (x &lt; room_width / 2)
+    if (x &lt;= room_width / 2)
         draw_text_ext(x + 130,y - 15,hint_text,14,200);
     else
         draw_text_ext(x - 130,y - 15,hint_text,14,200);

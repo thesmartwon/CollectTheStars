@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>with (obj_star)
+            <string>ds_list_clear(global.star_connections);
+with (obj_star)
     instance_destroy();
 room_goto(rm_menu);
 </string>
@@ -50,7 +51,8 @@ room_goto(rm_menu);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>with (obj_star)
+            <string>ds_list_clear(global.star_connections);
+with (obj_star)
     instance_destroy();
 room_goto(rm_menu);
 </string>

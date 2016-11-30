@@ -52,9 +52,9 @@ audio_play_sound(snd_complete, 1, false);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>ds_list_clear(global.star_connections);
-with (obj_star)
+            <string>with (obj_star)
     instance_destroy();
+ds_list_clear(global.star_connections);
 if (room != room_last)
     room_goto_next();
 else
